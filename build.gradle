@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "https://files.minecraftforge.net/maven" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "1.0"
+group = "com.cartnalia"
+archivesBaseName = "cartnalia"
+
+minecraft {
+    version = "1.12.2-14.23.5.2854"
+    runDir = "run"
+}
+
+dependencies {
+    compile "net.minecraftforge:forge:1.12.2-14.23.5.2854"
+}
+
+jar {
+    manifest {
+        attributes 'FMLAT': 'cartnalia_at.cfg'
+    }
+}

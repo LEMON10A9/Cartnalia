@@ -1,0 +1,10 @@
+[
+  {
+    "modid": "cartnalia",
+    "name": "Cartnalia",
+    "description": "Mod para melhorar o minecart com fornalha.",
+    "version": "1.0",
+    "mcversion": "1.12.2",
+    "modtype": "ForgeMod"
+  }
+]
